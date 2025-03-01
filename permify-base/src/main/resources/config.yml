@@ -1,0 +1,3 @@
+storage: json
+storageModules:
+  json: "http://localhost/repo/json.jar"
