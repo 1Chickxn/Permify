@@ -17,11 +17,11 @@ public class StorageLoader {
     }
 
     public boolean loadStorageModule(String storageType) {
-        File moduleFile = new File(plugin.getDataFolder(), "modules/" + storageType + ".jar");
+        File moduleFile = new File(plugin.getDataFolder(), "storage/" + storageType + ".jar");
         if (!moduleFile.exists() && !downloadModule(storageType, moduleFile)) {
             plugin.getLogger().warning("Modul '" + storageType + "' konnte nicht geladen werden. Fallback auf JSON.");
-            storageType = "json"; // Fallback
-            moduleFile = new File(plugin.getDataFolder(), "modules/json.jar");
+            storageType = "json";
+            moduleFile = new File(plugin.getDataFolder(), "storage/json.jar");
         }
 
         return registerStorage(storageType, moduleFile);
@@ -69,7 +69,6 @@ public class StorageLoader {
                 plugin.getLogger().warning("Die Klasse " + storageClass.getName() + " ist kein gültiges Storage-Modul!");
                 return false;
             }
-
 
             plugin.getLogger().info("Speicher '" + storageType + "' erfolgreich registriert.");
             return StorageHandler.setActiveStorage(storageType);
