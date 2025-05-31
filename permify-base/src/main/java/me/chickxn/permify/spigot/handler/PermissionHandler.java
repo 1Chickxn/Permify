@@ -34,7 +34,6 @@ public class PermissionHandler {
     }
 
     public void updatePlayerPermissions(Player player) {
-        this.injectWildcardPermissible(player);
         PermissionAttachment attachment = getAttachment(player);
         if (attachment == null) {
             return;

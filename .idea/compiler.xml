@@ -7,11 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="permify-rework" />
         <module name="JsonStorage" />
         <module name="permify-base" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mc" target="22" />
       <module name="permify-booter" target="22" />
       <module name="permify-cloud" target="21" />
       <module name="permify-storage-json" target="1.8" />

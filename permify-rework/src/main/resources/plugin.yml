@@ -1,0 +1,8 @@
+name: Permify
+main: me.chickxn.permify.spigot.PermifyBase
+description: Permify is a PermissionSystem for minecraft
+version: 0.1-pre.alpha
+author: 1Chickxn
+api-version: 1.20
+commands:
+  permify:

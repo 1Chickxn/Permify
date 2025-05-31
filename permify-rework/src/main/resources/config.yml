@@ -1,0 +1,25 @@
+storage: json
+
+server-name: "lobby"
+
+storageModules:
+  json: "http://localhost/repo/json.jar"
+  mysql: "http://localhost/repo/mysql.jar"
+  sqlite: "http://localhost/repo/sqlite.jar"
+
+mysql:
+  host: "localhost"
+  port: 3306
+  database: "permify"
+  username: "root"
+  password: "password"
+  pool-size: 10
+  ssl: false
+
+# Performance settings
+cache:
+  duration-seconds: 5
+  cleanup-interval-minutes: 1
+
+# Debug mode
+debug: false

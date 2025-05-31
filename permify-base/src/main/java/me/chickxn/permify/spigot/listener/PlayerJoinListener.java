@@ -32,7 +32,7 @@ public class PlayerJoinListener implements Listener {
                 playerJoinEvent.getPlayer().sendMessage("§cFehler: Die Standardgruppe existiert nicht.");
             }
         }
-
+        PermifyBase.getInstance().getPermissionHandler().injectWildcardPermissible(playerJoinEvent.getPlayer());
         PermifyBase.getInstance().getPermissionHandler().updatePlayerPermissions(playerJoinEvent.getPlayer());
     }
 }

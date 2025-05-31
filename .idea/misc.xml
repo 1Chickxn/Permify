@@ -9,10 +9,13 @@
         <option value="$PROJECT_DIR$/permify-storage-json/pom.xml" />
         <option value="$PROJECT_DIR$/permify-cloud/pom.xml" />
         <option value="$PROJECT_DIR$/permify-booter/pom.xml" />
+        <option value="$PROJECT_DIR$/permify-rework/pom.xml" />
+        <option value="$PROJECT_DIR$/mc/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/mc/pom.xml" />
         <option value="$PROJECT_DIR$/permify-booter/pom.xml" />
         <option value="$PROJECT_DIR$/permify-cloud/pom.xml" />
       </set>
